@@ -9,16 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.3",
+    "concat": "^1.0.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "uglifyjs": "^2.4.11"
   },
-  "dependencies": {
-    "gulp-concat": "^2.6.1",
-    "gulp-uglifyjs": "^0.6.2"
-  }
+  "dependencies": {}
 }
