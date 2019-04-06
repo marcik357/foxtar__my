@@ -1,0 +1,128 @@
+@import "vars";
+
+.product-details {
+  background-color: #f4f6f5;
+  padding: 50px 0;
+}
+
+.tabs__wrapper {
+  background-color: #fff;
+  margin: 0 -15px 52px;
+  border: 1px solid #dfdfdf;
+}
+
+.tab {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  color: #70838d;
+  line-height: 60px;
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+  & + .tab {
+    border-left: 1px solid #dfdfdf;
+  }
+  &.active {
+    color: $fon;
+    border-bottom: 3px solid $green;
+    font-weight: 500;
+  }
+}
+
+.tab-item {
+  line-height: 36px;
+  color: #707070;
+  padding: 36px;
+  max-height: 264px;
+  height: 100%;
+  font-size: 16px;
+  overflow: auto;
+  display: none;
+  &:first-child {
+    display: block;
+    overflow: visible;
+  }
+  ul.features {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    li {
+      padding: 0 37px 0 20px;
+      position: relative;
+      &::before {
+        position: absolute;
+        font-family: 'icomoon';
+        content: '\f105';
+        left: 0;
+        color: $green;
+      }
+    }
+  }
+  .comment {
+    padding-bottom: 20px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.author-portfolio {
+  margin: 0 -15px;
+}
+.author-portfolio__title {
+  border: 1px solid #dfdfdf;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 21px 27px;
+  background-color: #fff;
+  color: $fon;
+  margin-bottom: 28px;
+}
+
+.author-portfolio__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.author-portfolio__item {
+  margin-bottom: 28px;
+  height: 90px;
+  display: flex;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    .item-info {
+      display: inline-block;
+      padding: 0 21px;
+    }
+  }
+}
+
+.item-info__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: $fon;
+  margin-bottom: 7px;
+}
+
+.item-info__category {
+  font-size: 12px;
+  color: $green;
+  margin-bottom: 10px;
+}
+
+.item-info__price {
+  font-size: 18px;
+  font-weight: 500;
+  color: $fon;
+}
